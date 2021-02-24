@@ -22,7 +22,7 @@ object test {
     .add("list", ArrayType(listSchema))
     .add("p", ArrayType(pSchema))
 
-  val path = "/home/kasun/GSB/samplexml/RC16.21-01-20.gNB.snappy"
+  val path = "/home/kasun/Downloads/compressed/Input/RC16.21-01-20.gNB.xml.snappy"
 
   val df = session.read.option("rowTag", "managedObject").
     schema(structureSchema)
